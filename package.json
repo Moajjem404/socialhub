@@ -1,5 +1,5 @@
 {
-  "name": "reaction-management-dashboard",
+  "name": "SocialHub BY THBD",
   "version": "1.0.0",
   "description": "A beautiful dashboard for managing reactions, comments, and orders with webhook integration",
   "main": "server/index.js",
@@ -28,6 +28,7 @@
     "typescript": "^5.3.2"
   },
   "keywords": ["dashboard", "reactions", "comments", "orders", "webhook", "management"],
-  "author": "Your Name",
+  "author": "Moajjem",
   "license": "MIT"
 }
+
