@@ -9,7 +9,7 @@ const { ReactionLog, CommentLog, Order, WebhookConfig, UserBan } = require('../m
 const { requireAuth } = require('../middleware/auth');
 
 // Get database stats
-router.get('/stats', async (req, res) => {
+router.get('/stats', requireAuth, async (req, res) => {
     try {
         const totalReactions = await ReactionLog.countDocuments();
         const totalComments = await CommentLog.countDocuments();
@@ -191,3 +191,4 @@ router.get('/health', (req, res) => {
 });
 
 module.exports = router;
+
